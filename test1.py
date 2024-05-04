@@ -47,7 +47,6 @@ def sumber_nutrisi(nutrisi):
 
     return sources.get(nutrisi, [])
 
-st.image('assets/gambarPanganSehat.jpg')
 coloredFont1 = '<b style="color:Red; font-size:45px;" >PANGAN SEHAT</b>'
 st.markdown(coloredFont1, unsafe_allow_html=True)
 
