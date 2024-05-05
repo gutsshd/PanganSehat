@@ -4,9 +4,9 @@ def berat_badan_ideal(tinggi, jenis_kelamin):
     """Fungsi untuk menghitung berat badan ideal berdasarkan tinggi dan jenis kelamin"""
     jenis_kelamin = jenis_kelamin.lower()  # Normalisasi input jenis kelamin
     if jenis_kelamin == 'pria':
-        berat_ideal =  22 * (tinggi ** 2)
+        berat_ideal = (tinggi_cm - 100) - ((tinggi_cm - 150) * 0.1)
     elif jenis_kelamin == 'wanita':
-        berat_ideal =  21 * (tinggi ** 2)
+        berat_ideal = (tinggi_cm - 100) - ((tinggi_cm - 150) * 0.15)
     else:
         return "Jenis kelamin tidak valid. Masukkan 'pria' atau 'wanita'."
     return berat_ideal
@@ -61,10 +61,10 @@ jenis_kelamin = st.radio("Jenis Kelamin:", ('Pria', 'Wanita'))
 
 
 if st.button("Hitung Semua"):
-    st.snow()
     if tinggi_cm <= 0:  # Validasi tinggi badan
         st.error("Tinggi badan harus lebih besar dari 0.")
     else:
+        st.snow()
         berat_ideal = berat_badan_ideal(tinggi_m, jenis_kelamin)
         kalori_harian = hitung_kalori(berat_ideal, umur, jenis_kelamin, tinggi_cm)
         persen_protein, persen_karbohidrat, persen_lemak = hitung_persen_kalori(berat_ideal)
