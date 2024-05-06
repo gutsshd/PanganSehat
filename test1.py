@@ -82,7 +82,7 @@ if st.button("Hitung Semua"):
 
 with st.sidebar:
     st.title("")        
-    coloredFont2 = '<b style="color:Red; font-size:30px;" >Sumber Nutrisi</b>'
+    coloredFont2 = '<b style="color:Red; font-size:35px;" >Sumber Nutrisi</b>'
     st.markdown(coloredFont2, unsafe_allow_html=True)
     #st.title("Sumber Nutrisi")
     st.subheader("Temukan Sumber-Sumber Umum untuk Protein, Lemak, dan Karbohidrat")
