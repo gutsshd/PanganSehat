@@ -1,5 +1,8 @@
 import streamlit as st
 
+base="light"
+backgroundColor="#bce6ec"
+
 def berat_badan_ideal(tinggi, jenis_kelamin):
     """Fungsi untuk menghitung berat badan ideal berdasarkan tinggi dan jenis kelamin"""
     jenis_kelamin = jenis_kelamin.lower()  # Normalisasi input jenis kelamin
