@@ -50,7 +50,7 @@ def sumber_nutrisi(nutrisi):
 
     return sources.get(nutrisi, [])
 
-coloredFont1 = '<b style="color:Red; font-size:45px;" >PANGAN SEHAT</b>'
+coloredFont1 = '<b style="color:Red; font-size:55px;" >PANGAN SEHAT</b>'
 st.markdown(coloredFont1, unsafe_allow_html=True)
 
 st.subheader("Platform Interaktif Untuk Informasi Nutrisi Tubuh yang Ideal")
