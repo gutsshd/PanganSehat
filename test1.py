@@ -7,9 +7,9 @@ def berat_badan_ideal(tinggi, jenis_kelamin):
     """Fungsi untuk menghitung berat badan ideal berdasarkan tinggi dan jenis kelamin"""
     jenis_kelamin = jenis_kelamin.lower()  # Normalisasi input jenis kelamin
     if jenis_kelamin == 'pria':
-        berat_ideal = (tinggi_cm - 100) - ((tinggi_cm - 150) * 0.1)
+        berat_ideal = (tinggi_cm - 100) - ((tinggi_cm - 100) * 0.1)
     elif jenis_kelamin == 'wanita':
-        berat_ideal = (tinggi_cm - 100) - ((tinggi_cm - 150) * 0.15)
+        berat_ideal = (tinggi_cm - 100) - ((tinggi_cm - 100) * 0.15)
     else:
         return "Jenis kelamin tidak valid. Masukkan 'pria' atau 'wanita'."
     return berat_ideal
